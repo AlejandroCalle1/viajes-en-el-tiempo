@@ -2,10 +2,29 @@ header {
     display: flex;  /* convierte en contenedor flexible */
     justify-content: space-between; /* distribuye el espacio entre los elementos */
     align-items: center; /* alinea verticalmente los elementos */
+    font-family: sans-serif; /* fuente de la cabecera */
+    
 }
 
-nav ul {  
+nav { /* Estilos para la barra de navegación */
+    margin: 0 auto; /*centra el <nav> entre sus hermanos (h1 y button) dentro del header — esto es justo lo que buscabas para el efecto Aviatur.*/
+}
+
+
+nav ul  {  /* Estilos para la barra de navegación, ya que los estilos en ocaciones solo afectan a hijos y no a descendientes,es decir que si le aplicara solo header no aplicaria a los LI */
     display: flex; /* convierte en un contenedor flexible, y que LI se acomoden horizontalmente */
     list-style: none; /* elimina los puntos de la lista */
-    gap: 20px; /* espacio entre los elementos de la lista */
+    gap: 20px; /* espacio entre los elementos de la lista */   
+}
+
+nav ul li a {
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+    color: #3a3939; /* color del texto */
+    transition: 0.2s ease; /* transición suave para el efecto hover,requisito para que se aplique en el hover */
+
+}
+
+nav ul li a:hover {
+    color: #000000;
+    transform: scale(1.2);
 }
