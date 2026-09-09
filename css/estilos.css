@@ -10,6 +10,17 @@ header {
 
 nav { /* Estilos para la barra de navegación */
     margin: 0 auto; /*centra el <nav> entre sus hermanos (h1 y button) dentro del header — esto es justo lo que buscabas para el efecto Aviatur.*/
+
+}
+
+.btn-ingresar {
+    background-color: #1a3a6b; /* azul oscuro, cámbialo por tu paleta */
+    color: white;
+    padding: 17px 20px;  /* espacio interno de reticula */
+    border-radius: 5px;
+    cursor: pointer; /* cambia el cursor al pasar sobre el botón */
+    font-size: 0.9rem; /* tamaño de fuente */
+    
 }
 
 
@@ -19,16 +30,20 @@ nav ul  {  /* Estilos para la barra de navegación, ya que los estilos en ocacio
     gap: 20px; /* espacio entre los elementos de la lista */   
 }
 
+
+
 nav ul li a {
     text-decoration: none; /* elimina el subrayado de los enlaces */
     color: #3a3939; /* color del texto */
     transition: 0.2s ease; /* transición suave para el efecto hover,requisito para que se aplique en el hover */
+    font-size: 1.2rem; /* tamaño de fuente */
 
 }
 
 nav ul li a:hover {
     color: #000000;
     transform: scale(1.2);
+    font-size: 1.4rem; /* tamaño de fuente al pasar el mouse */
 }
 
 /* Estilos para body 1 seccion, el hero ---------------------------------------------------------------------------------------------------------------------------------  */
