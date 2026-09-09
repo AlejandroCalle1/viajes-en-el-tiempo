@@ -19,7 +19,7 @@ header {
 
 nav { /* Estilos para la barra de navegación */
     margin: 0 auto; /*centra el <nav> entre sus hermanos (h1 y button) dentro del header — esto es justo lo que buscabas para el efecto Aviatur.*/
-
+    
 }
 
 .btn-ingresar {
@@ -44,7 +44,6 @@ nav ul  {  /* Estilos para la barra de navegación, ya que los estilos en ocacio
 nav ul li a {
     text-decoration: none; /* elimina el subrayado de los enlaces */
     color: #4a5568; /* color del texto */
-    transition: 0.2s ease; /* transición suave para el efecto hover,requisito para que se aplique en el hover */
     font-size: 0.95rem; /* tamaño de fuente */
     font-weight: 600;
     letter-spacing: 0.2px;
@@ -54,16 +53,14 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #1a3a6b; /* azul institucional al pasar el mouse */
-    transform: translateY(-2px); /* elevación sutil y fluida */
-    /*color: #000000;
-    transform: scale(1.2)
-    font-size: 1.4rem; /* tamaño de fuente al pasar el mouse */
+    transform: translateY(-2px) scale(1.2); /* elevación sutil y fluida */
+    font-size: 1rem;  
 }
 
 /* Estilos para body 1 seccion, el hero ---------------------------------------------------------------------------------------------------------------------------------  */
 .hero {
     /*imagen de fondo*/
-    background-image: url('../img/Gemini_Generated_Image_vbwmvsvbwmvsvbwm.jpg'); /* imagen de fondo */
+    background-image: url('../img/imagen\ hero.jpg'); /* imagen de fondo */
     background-size: cover;
     background-position: center;
     height: 400px;            /* altura de imagen*/
@@ -79,21 +76,37 @@ nav ul li a:hover {
     /*font-family: sans-serif; ya el body lo asinga*/
     color: #ffffff;
 
-  
-    
+     
 }
 /* Body 1 seccion etiqueta blanca  */
 .buscador-flotante {
     background-color: white;
-    color: #333;                    
-    border-radius: 15px;  /* bordes redondeados */
-    padding: 80px;        /* espacio interno */        
-    width: 80%;           /* ancho de la tarjeta */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);  /* sombra para que "flote" visualmente */
-    
-    align-self: center;             /* aunque el resto del hero esté a la izquierda, esta tarjeta sí queremos centrada */
-    position: relative;    
-    /* para poder usar bottom */
+    color: #333;
+    border-radius: 15px;
+    padding: 24px 32px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    align-self: center;
+    position: relative;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btn-explorar {
+    display: inline-block;
+    background-color: #1a3a6b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-explorar:hover {
+    background-color: #142e54;
 }
 
 /* Body 2 seccion, cuadrícula de destinos ---------------------------------------------------------------------------------------------------------------------------------  */
@@ -169,6 +182,38 @@ nav ul li a:hover {
 }
 
 /*seccion de preguntas frecuentes, utilizacion de javaScript "mostrar o ocultar info",FAQ DESPEGABLE --------------------------------------------------------------- */
+.preguntas-frecuentes {  /* contenedor de la sección de preguntas frecuentes */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.item-acordeon {       /* contenedor de cada pregunta y respuesta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.boton-acordeon {    /* estilos para el botón que despliega la respuesta */
+    width: 100%;
+    text-align: left;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item-acordeon p {   /* oculto por defecto */
+    display: none;
+    padding: 15px;
+}
+
+.item-acordeon p.mostrar {  /* cuando se hace clic en el botón, se agrega la clase "mostrar" para mostrar la respuesta, visible cuando javaScript lo active */
+    display: block;
+}
+
 
 /* pagina destinos historicos*/
 
