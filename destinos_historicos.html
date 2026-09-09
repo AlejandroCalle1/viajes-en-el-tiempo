@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Históricos - Chronos Travel</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Mantenemos el mismo header que el index -->
+    <header>
+        <span class="titulo-badge">Chronos Travel</span>
+
+        <nav>
+            <ul>
+                <li><a href="destinos_historicos.html">Destinos históricos</a></li>
+                <li><a href="destinos_futuristas.html">Destinos futuristas</a></li>
+                <li><a href="hoteles_paquetes_viajes.html">Hoteles y paquetes de viaje</a></li>
+                <li><a href="reglas_viajes.html">Reglas para viajes en el tiempo</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-ingresar">Ingresar</button>
+    </header>
+
+    <main>
+        <section class="banner-pagina">
+            <span class="subtitulo-badge">Chronos Travel</span>
+            <h1>Destinos Históricos</h1>
+            <div class="linea-decorativa"></div>
+            <p>Revive la historia viajando a las épocas más fascinantes de la humanidad.</p>
+        </section>
+
+        <!-- Sección de destinos en formato zigzag -->
+        <section class="contenedor-destinos-historicos">
+
+            <!-- Destino 1: Imagen Izquierda / Texto Derecho -->
+            <article class="tarjeta-zigzag">
+                <div class="imagen-zigzag">
+                    <img src="img/coliseo destino.jpg" alt="Coliseo Romano">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Roma Antigua: Inauguración del Coliseo (80 d.C.)</h2>
+                    <p>Sé testigo de las legendarias peleas de gladiadores y las naumaquias en el gran anfiteatro Flavio recién construido. Camina por el Foro Romano en la cúspide de la gloria del Imperio.</p>
+                    <a href="#" class="btn-reserva">Reservar viaje</a>
+                </div>
+            </article>
+
+            <!-- Destino 2: Invertido (Texto Izquierdo / Imagen Derecha mediante CSS) -->
+            <article class="tarjeta-zigzag invertido">
+                <div class="imagen-zigzag">
+                    <img src="img/piramide destino.jpg" alt="Pirámides de Guiza">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Egipto Antiguo: Construcción de las Pirámides (2560 a.C.)</h2>
+                    <p>Observa con tus propios ojos cómo los antiguos egipcios erigieron la Gran Pirámide de Guiza para el faraón Khufu. Descubre los misterios técnicos y espirituales del Antiguo Reino.</p>
+                    <a href="#" class="btn-reserva">Reservar viaje</a>
+                </div>
+            </article>
+
+            <!-- Destino 3: Imagen Izquierda / Texto Derecho -->
+            <article class="tarjeta-zigzag">
+                <div class="imagen-zigzag">
+                    <img src="img/hotel medieval.jpg" alt="Castillo Medieval">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Europa Medieval: Banquetes y Torneos (Siglo XIII)</h2>
+                    <p>Siente la adrenalina de los torneos de caballeros, vive en fortalezas imponentes y disfruta de banquetes reales en el corazón de la Edad Media europea.</p>
+                    <a href="#" class="btn-reserva">Reservar viaje</a>
+                </div>
+            </article>
+            <!-- Destino 7: Babilonia -->
+            <article class="tarjeta-zigzag invertido">
+                <div class="imagen-zigzag">
+                    <img src="img/babilonia.jpg" alt="Jardines Colgantes de Babilonia">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Babilonia: Jardines Colgantes (600 a.C.)</h2>
+                    <p>Visita una de las Siete Maravillas del Mundo Antiguo durante el reinado de Nabucodonosor II. Admira las monumentales terrazas verdes y la majestuosa Puerta de Ishtar.</p>
+                    <a href="#" class="btn-reserva">Reservar viaje</a>
+                </div>
+            </article>
+
+            <!-- Destino 8: Imperio Maya -->
+            <article class="tarjeta-zigzag">
+                <div class="imagen-zigzag">
+                    <img src="img/maya.jpg" alt="Pirámide de Chichén Itzá">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Imperio Maya: Chichén Itzá Clásico (800 d.C.)</h2>
+                    <p>Adéntrate en el corazón de la península de Yucatán en el apogeo astronómico y arquitectónico maya. Presencia los rituales en los templos y descubre sus avanzados calendarios.</p>
+                    <a href="#" class="btn-reserva">Reservar viaje</a>
+                </div>
+            </article>
+
+            <!-- Destino 9: Ruta de la Seda -->
+            <article class="tarjeta-zigzag invertido">
+                <div class="imagen-zigzag">
+                    <img src="img/ruta_seda.jpg" alt="Caravana en la ciudad labrada de Petra">
+                </div>
+                <div class="contenido-zigzag">
+                    <h2>Ruta de la Seda: Petra la Ciudad de Piedra (100 a.C.)</h2>
+                    <p>Acompaña a los comerciantes nabateos en el cruce de las grandes rutas del desierto. Descubre desfiladeros impresionantes y fachadas labradas directamente en la roca rosa.</p>
+                    <a href="#" class="btn-reserva">Reservar viaje</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chronos Travel. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tarjetas = document.querySelectorAll(".tarjeta-zigzag");
+
+            const observador = new IntersectionObserver((entradas) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            tarjetas.forEach((tarjeta) => observador.observe(tarjeta));
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
