@@ -83,13 +83,13 @@ nav ul li a:hover {
 }
 
 /* Body 2 seccion, cuadrícula de destinos ---------------------------------------------------------------------------------------------------------------------------------  */
-.destinos_turisticos {
+.destinos_turisticos {   /* contenedor de la cuadrícula de destinos */
     padding: 50px; /* espacio interno alrededor de la cuadrícula */
     font-family: sans-serif;
     color: #333;
 }
 
-.grid-destinos {
+.grid-destinos {      /* contenedor de la cuadrícula de destinos */
     display: grid; /* convierte el contenedor en una cuadrícula */
     grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
     gap: 70px; /* espacio entre los elementos de la cuadrícula */
@@ -105,12 +105,12 @@ nav ul li a:hover {
     overflow: hidden; /* asegura que el contenido no se desborde de la tarjeta */
     height: 300px; /* altura de la tarjeta */
 }
-.tarjeta-destino img {
+.tarjeta-destino img {  /* estilos para la imagen dentro de la tarjeta */
     width: 100%;
     height: 100%;
     object-fit: cover;       /* la imagen llena la tarjeta sin deformarse, similar a background-size: cover */
 }
-.etiqueta {
+.etiqueta {   
     position: absolute;
     top: 15px;
     right: 15px;
@@ -121,4 +121,39 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 1rem;
 }
+
+
+/* Body 3 seccion, cuadrícula de hoteles ---------------------------------------------------------------------------------------------------------------------------------  */
+.hoteles_destinos{
+    position: relative; /* para poder posicionar el contenido dentro de la tarjeta */
+    padding: 50px;  /* espacio interno alrededor de la cuadrícula, para que quede alineado con lo demas */
+    font-family: sans-serif;
+    color: #333;
+}
+
+.grid-hoteles {   /* contenedor de la cuadrícula de hoteles */
+    display: grid; /* convierte el contenedor en una cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
+    gap: 70px; /* espacio entre los elementos de la cuadrícula */
+}
+
+/*estilos para cada tarjeta de destino */
+.tarjeta-hotel {
+    position: relative; /* para poder posicionar el contenido dentro de la tarjeta */
+    display:block; /* hace que toda la tarjeta sea clickeable */
+    text-decoration: none; /* elimina el subrayado del enlace */
+    color: white; /* color del texto dentro de la tarjeta */
+    border-radius: 10px; /* bordes redondeados */
+    overflow: hidden; /* asegura que el contenido no se desborde de la tarjeta */
+    height: 300px; /* altura de la tarjeta */
+}
+
+.tarjeta-hotel img {   /* estilos para la imagen dentro de la tarjeta */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* la imagen llena la tarjeta sin deformarse, similar a background-size: cover */
+}
+
+/*seccion de preguntas frecuentes, utilizacion de javaScript "mostrar o ocultar info",FAQ DESPEGABLE --------------------------------------------------------------- */
+
 

@@ -15,7 +15,7 @@
             <ul> <!-- UL lista desordenada, LI crea cada item -->
                 <li><a href="destinos_historicos.html">Destinos históricos</a></li>
                 <li><a href="destinos_futuristas.html">Destinos futuristas</a></li>
-                <li><a href="paquetes_viaje.html">Paquetes de viaje</a></li>
+                <li><a href="hoteles_paquetes_viajes.html"> Hoteles y paquetes de viaje</a></li>
                 <li><a href="reglas_viajes.html">Reglas para viajes en el tiempo</a></li>
             </ul>
         </nav>
@@ -36,28 +36,116 @@
         </section>
 
         <section class="destinos_turisticos"> <!-- sección de contenido, sección de información -->
-            <h1>Reserve su viaje a través del tiempo</h1>
+            <h2>Reserve su viaje a través del tiempo</h1>
             <h4>Descubre más sobre nuestros destinos históricos y futuristas, así como los paquetes de viaje que ofrecemos. Sumérgete en la historia y el futuro con nosotros.</h4>
 
             <div class="grid-destinos"> <!-- contenedor de la cuadrícula de destinos -->
 
                 <a href="destinos_historicos.html" class="tarjeta-destino"> <!-- enlace a la página de destinos históricos -->
-                    <img src="img/coliseo.jpg" alt="ROMA ANTIGUA">
+                    <img src="img/coliseo destino.jpg">
                     <span class="etiqueta">Camina por el Coliseo </span> <!-- etiqueta o texto parecido a  para el nombre del destino -->
                 </a>
 
                 <a href="destinos_historicos.html" class="tarjeta-destino"> <!-- enlace a la página de destinos históricos -->
-                    <img src="img/construccion-piramides-egipto-DKBKEXQZ7JBLZB6GCIVDETXENU.jpg" alt="Egipto antiguo">
+                    <img src="img/piramide destino.jpg">
                     <span class="etiqueta">Visita las pirámides recien construidas</span> <!-- etiqueta para el nombre del destino -->
                 </a>
 
-                <a href="destinos_historicos.html" class="tarjeta-destino"> <!-- enlace a la página de destinos históricos -->
-                    <img src="img/Como-era-vivir-en-un-castillo-1320x754.jpg" alt="Edad media">
-                    <span class="etiqueta">Vive la vida en la Edad Media</span> <!-- etiqueta o texto para el nombre del destino -->
+                <a href="destinos_futuristicas.html" class="tarjeta-destino"> <!-- enlace a la página de destinos futuristas -->
+                    <img src="img/ciudad futurista destino.jpg">
+                    <span class="etiqueta">Vive en el futuro</span> <!-- etiqueta o texto para el nombre del destino -->
                 </a>
 
             </div>
         </section>
+
+        <section class="hoteles_destinos"> <!-- sección de hoteles de viaje -->
+            <h1>Hoteles en destinos unicos</h1>
+
+            <div class="grid-hoteles"> <!-- contenedor de la cuadrícula de hoteles -->
+
+                <a href="hoteles_destinos.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel futurista bajo agua .jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="hoteles_destinos.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel futurista ciduad .jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="hoteles_destinos.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hoteles futuristas nave .jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="hoteles_destinos.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel medieval.jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="hoteles_destinos.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel piramides.jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+
+                <a href="hoteles_destinos.html" class="tarjeta-hotel"> <!-- enlace a la página de hoteles -->
+                    <img src="img/hotel romano.jpg">
+                    <span class="etiqueta">Reserve ahora</span> <!-- etiqueta para el nombre del hotel -->
+                </a>
+            
+            </div>
+            
+        </section>
+
+        <!-- Secccion de preguntas frecuentes, utilizacion de javaScript "mostrar o ocultar info",FAQ DESPEGABLE ------------------------------------------>
+        <section class="preguntas-frecuentes">
+            <h1>Preguntas frecuentes</h1>
+            <p>¿Tienes preguntas sobre nuestros viajes en el tiempo? Aquí encontrarás respuestas a las preguntas más comunes.</p>
+            
+            <div class="acordeon">
+
+                <!-- Envolver cada cada pregunta-respuesta en su propio contenedor para que sea mas manejable el javaScript-->
+                <div class="item-acordeon">
+                    <button class="boton-acordeon">¿Cómo puedo reservar un viaje en el tiempo?</button>
+                    <p>Para reservar un viaje en el tiempo, simplemente haga clic en el destino que le interesa y siga las instrucciones para completar su reserva.</p>
+                </div>
+                    
+                <div class="item-acordeon">
+                    <button class="boton-acordeon">¿Qué medidas de seguridad se toman durante los viajes en el tiempo?</button>
+                    <p>Nuestros viajes en el tiempo están diseñados con la máxima seguridad en mente. Contamos con protocolos estrictos y tecnología avanzada para garantizar la seguridad de nuestros viajeros.</p>   
+                </div>
+
+                <div class="item-acordeon">
+                    <button class="boton-acordeon">¿Puedo viajar al pasado y al futuro?</button>
+                    <p>Sí, ofrecemos viajes tanto al pasado como al futuro. Puede elegir entre una variedad de destinos históricos y futuristas según sus preferencias.</p>
+                </div>
+
+                <div class="item-acordeon">
+                    <button class="boton-acordeon">¿Qué debo llevar conmigo en un viaje en el tiempo?</button>
+                    <p>Recomendamos llevar ropa y artículos apropiados para la época a la que viaja. También proporcionamos una lista de sugerencias antes de su viaje.</p>
+                </div>
+
+                <div class="item-acordeon">
+                    <button class="boton-acordeon">¿Qué pasa si algo sale mal durante el viaje?</button>
+                    <p>Contamos con un equipo de soporte disponible las 24 horas para asistirlo en caso de cualquier eventualidad. Su seguridad es nuestra prioridad.</p>
+                </div>
+
+                <div class="item-acordeon">
+                    <button class="boton-acordeon">¿Puedo cambiar mi destino después de reservar?</button>
+                    <p>Si desea cambiar su destino, póngase en contacto con nuestro equipo de atención al cliente. Haremos todo lo posible para acomodar su solicitud, sujeto a disponibilidad.</p>
+                </div>
+
+                <div class="item-acordeon">
+                    <button class="boton-acordeon">¿Existen restricciones de edad para los viajes en el tiempo?</button>
+                    <p>Sí, los viajeros deben tener al menos 18 años para reservar un viaje en el tiempo. Los menores de edad deben estar acompañados por un adulto responsable.</p>
+                </div>     
+            
+            </div>
+        </section>
+           
+            
+
 
 
 
