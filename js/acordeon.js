@@ -8,18 +8,19 @@ botones.forEach(boton => {   //significa "para cada uno". Es un método que le d
     });
 });
 
-const cajas = document.querySelectorAll('.reglas-grid.alto, .reglas-grid.medio'); // Usa la clase CSS de tus contenedores
-
+const cajas = document.querySelectorAll('.reglas-grid.alto, .reglas-grid.medio'); // Usamos la clase de los contenedores de CSS
+ // Al pasar el ratón, salta ligeramente
 cajas.forEach(caja => {
-  // Al pasar el ratón, salta ligeramente
+  
   caja.addEventListener('mouseenter', () => {
     caja.style.transform = 'scale(1.05) translateY(-5px)';
     caja.style.transition = 'transform 0.2s ease';
-  });
+  });// Al pasar el ratón, salta ligeramente
 
-  // Al quitar el ratón, vuelve a su tamaño normal
+  
   caja.style.transition = 'transform 0.2s ease';
   caja.addEventListener('mouseleave', () => {
     caja.style.transform = 'scale(1) translateY(0)';
-  });
+  });// Al quitar el ratón, vuelve a su tamaño normal
 });
+
