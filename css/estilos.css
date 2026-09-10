@@ -15,7 +15,7 @@ header {
     align-items: center; /* alinea verticalmente los elementos */
     justify-items: center; /* evita que los hijos se estiren para llenar su columna */
     /*font-family: sans-serif; /* fuente de la cabecera */
-    
+   
 }
 
 nav { /* Estilos para la barra de navegación */
@@ -44,6 +44,7 @@ nav ul  {  /* Estilos para la barra de navegación, ya que los estilos en ocacio
 
 .titulo-link,
 nav ul li a {
+    
     text-decoration: none; /* elimina el subrayado de los enlaces */
     color: #4a5568; /* color del texto */
     font-size: 0.95rem; /* tamaño de fuente */
@@ -54,7 +55,6 @@ nav ul li a {
 }
 
 .titulo-link {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #1a3a6b;
     font-size: 2rem;
     text-decoration: none;
@@ -496,3 +496,89 @@ footer {
 }
 
 /* fin pagina de reglas*/
+
+
+/* Estilos para el Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-card h2 {
+    color: #1a1a6b;
+    margin-bottom: 5px;
+}
+
+.login-card p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #1a1a6b;
+}
+
+.btn-login {
+    background-color: #1a1a6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #2a2a8b;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #1a1a6b;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
