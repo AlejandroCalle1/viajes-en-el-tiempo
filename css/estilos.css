@@ -1,83 +1,70 @@
-
-body {/*este body pone toda la pagina con esta fuente en caso de que no haya sido asignada ninguna por lo que no es necesario repetirla en cada estilo si se quiere dejar asi*/
+body { /* este body pone toda la página con esta fuente en caso de que no haya sido asignada ninguna, por lo que no es necesario repetirla en cada estilo si se quiere dejar así */
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #2c3e50;
-    line-height: 1.6;   /* altura de línea para mejorar la legibilidad */
-} 
+    line-height: 1.6; /* altura de línea para mejorar la legibilidad */
+}
 
-header {      /* Estilos para el head incluyendo el nav */
-    
+header { /* Estilos para el header incluyendo el nav */
     display: grid; /* convierte el header en un contenedor de cuadrícula */
     grid-template-columns: 1fr auto 1fr; /* define tres columnas, la primera y la tercera ocupan el mismo espacio, la segunda se ajusta al contenido */
     align-items: center; /* alinea verticalmente los elementos */
     justify-items: center; /* evita que los hijos se estiren para llenar su columna */
-    /*font-family: sans-serif; /* fuente de la cabecera */
-   
-}
-
-nav { /* Estilos para la barra de navegación */
-    margin: 0 auto; /*centra el <nav> entre sus hermanos (h1 y button) dentro del header — esto es justo lo que buscabas para el efecto Aviatur.*/
-    
 }
 
 .btn-ingresar { /* Estilos para el botón de ingreso */
     background-color: #1a3a6b; /* azul oscuro, cámbialo por tu paleta */
     color: white;
-    padding: 10px 20px;  /* espacio interno de reticula */
+    padding: 10px 20px; /* espacio interno de retícula */
     border-radius: 5px;
     cursor: pointer; /* cambia el cursor al pasar sobre el botón */
     font-size: 0.9rem; /* tamaño de fuente */
-    
 }
 
-nav ul  {  /* Estilos para la barra de navegación, ya que los estilos en ocaciones solo afectan a hijos y no a descendientes,es decir que si le aplicara solo header no aplicaria a los LI */
+nav ul { /* Estilos para la barra de navegación, ya que los estilos en ocasiones solo afectan a hijos y no a descendientes, es decir que si le aplicara solo header no aplicaría a los LI */
     display: flex; /* convierte en un contenedor flexible, y que LI se acomoden horizontalmente */
     list-style: none; /* elimina los puntos de la lista */
-    gap: 20px; /* espacio entre los elementos de la lista */   
+    gap: 20px; /* espacio entre los elementos de la lista */
 }
 
-.titulo-link,nav ul li a {  /* estilos para los enlaces de navegación y el título del sitio web */
+.titulo-link, nav ul li a { /* estilos para los enlaces de navegación y el título del sitio web */
     text-decoration: none; /* elimina el subrayado de los enlaces */
     color: #4a5568; /* color del texto */
     font-size: 0.95rem; /* tamaño de fuente */
     font-weight: 600;
     letter-spacing: 0.2px;
-    transition: color 0.25s ease, transform 0.25s ease;/* transición suave para el efecto hover */
+    transition: color 0.25s ease, transform 0.25s ease; /* transición suave para el efecto hover */
     display: inline-block;
 }
 
-.titulo-link {  /* estilos para el título del sitio web */
+.titulo-link { /* estilos para el título del sitio web */
     color: #1a3a6b;
     font-size: 2rem;
-    text-decoration: none;
 }
 
-nav ul li a:hover {   /* estilos para los enlaces de navegación al pasar el mouse */
+nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse */
     color: #1a3a6b; /* azul institucional al pasar el mouse */
     transform: translateY(-2px) scale(1.2); /* elevación sutil y fluida */
-    font-size: 1rem;  
+    font-size: 1rem;
 }
 
-/* Estilos para body 1 seccion, el hero ---------------------------------------------------------------------------------------------------------------------------------  */
-.hero {   /* contenedor del hero */
-    /*imagen de fondo*/
+/* Estilos para body 1 seccion, el hero ------------------------------------------------------------ */
+.hero { /* contenedor del hero */
     background-image: url('../img/imagen\ hero.jpg'); /* imagen de fondo */
     background-size: cover;
     background-position: center;
-    height: 400px;            /* altura de imagen*/
-    
-    /*texto de la hero*/
+    height: 400px; /* altura de imagen */
+
+    /* texto del hero */
     display: flex;
-    flex-direction: column;       /* apila los hijos verticalmente, en vez de en fila */
-    justify-content: flex-start;  /*pega contenido arriba*/
-    align-items: flex-start;          /* pega el contenido a la izquierda */
-    text-align: left;           /* alinia el texto a la izquierda */
+    flex-direction: column;      /* apila los hijos verticalmente, en vez de en fila */
+    justify-content: flex-start; /* pega contenido arriba */
+    align-items: flex-start;     /* pega el contenido a la izquierda */
+    text-align: left;            /* alinea el texto a la izquierda */
     padding: 20px 40px;
-    /*font-family: sans-serif; ya el body lo asinga*/
-    color: #ffffff;  
+    color: #ffffff;
 }
 
-.buscador-flotante { /* Body 1 seccion etiqueta blanca  */
+.buscador-flotante { /* Body 1 sección, etiqueta blanca */
     background-color: rgba(255, 255, 255, 0.8); /* 0.8 equivale al 80% de opacidad */
     color: #333;
     border-radius: 15px;
@@ -91,8 +78,8 @@ nav ul li a:hover {   /* estilos para los enlaces de navegación al pasar el mou
     font-size: 1.1rem;
     font-weight: 500;
 }
- 
-.btn-explorar {  /* estilos para el botón de explorar */
+
+.btn-explorar { /* estilos para el botón de explorar */
     display: inline-block;
     background-color: #1a3a6b;
     color: white;
@@ -103,7 +90,7 @@ nav ul li a:hover {   /* estilos para los enlaces de navegación al pasar el mou
     transition: background-color 0.2s ease;
 }
 
-.btn-explorar:hover {  /* efecto hover para el botón de explorar */
+.btn-explorar:hover { /* efecto hover para el botón de explorar */
     background-color: #142e54;
 }
 
