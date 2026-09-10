@@ -231,23 +231,23 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
     background-color: #12294d;
 }
 
-/* pagina destinos historicos*/
+/* pagina destinos historicos ------------------------------------------------------------------------------------------------------------*/ 
 
 /* Banner principal con imagen de fondo y superposición (Overlay) */
-.banner-pagina {
-    background-image: linear-gradient(
+.banner-pagina { 
+    background-image: linear-gradient( 
         rgba(136, 182, 255, 0.75), 
         rgba(13, 35, 71, 0.75)
-    ), url('../img/banner_historico.jpg');
-    background-size: cover;
+    ), url('../img/banner_historico.jpg'); /*la iamgen de fondo del banner de las laspagina con un efecto de degradado*/
+    background-size: cover; 
     background-position: center;
-    background-repeat: no-repeat;
-    font-weight: 700; /* O 800 para títulos principales de banner */
+    background-repeat: no-repeat; /*le decimos que no repita la iamgen para qeu ocupe todo el espacio bien*/
+    font-weight: 700; /* tamaño fuente en caso de no ser asingado ya*/
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 20px; /*bordes*/
     font-family: sans-serif;
-    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.2); /*sombreados de portada*/
 }
 
 
@@ -259,7 +259,7 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-weight: 800; /* O 800 para títulos principales de banner */
+    font-weight: 800; 
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -268,8 +268,8 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
 }
 
 
-/* Badge decorativo superior */
-.subtitulo-badge {
+/* Badge decorativo superior esto es para el chronos que aparece en el banner encapsulado*/
+.subtitulo-badge { 
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.15);
     padding: 6px 18px;
@@ -281,7 +281,7 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
     backdrop-filter: blur(4px);
 }
 
-/* estilo del titulo de chronos travel de la parte principal del menu superior*/
+/* estilo del titulo de chronos travel de la parte principal del menu superior en la barra navegacion*/
 .titulo-badge {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.15);
@@ -328,7 +328,7 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
 .contenedor-destinos-historicos {
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 20px;
+    padding: 0 20px; /*margen desde adentro del contenedor de la tarjeta */
     display: flex;
     flex-direction: column;
     gap: 70px; /* Espacio vertical entre cada tarjeta */
@@ -337,12 +337,12 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
 
 /* Tarjeta individual en zigzag */
 .tarjeta-zigzag {
-    display: flex;
+    display: flex; /*convertimos en contenedor felixble o sea colocar imagenes y texto lado a lado */
     align-items: center;
-    gap: 50px; /* Espacio entre imagen y texto */
+    gap: 50px; /* Espacio entre imagen y texto espacio interno */
     background-color: #ffffff;
     border-radius: 16px;
-    overflow: hidden;
+    overflow: hidden; /*importante cortaquita cualquier contenido hijo como la iamgens para que no sobresalga de esto*/
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     
     /* Estado inicial para la animación por scroll */
@@ -364,26 +364,26 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
 
 /* Efecto hover al pasar el cursor sobre la tarjeta */
 .tarjeta-zigzag:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-8px) !important; /* este movimiento tiene prioridad*/
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12); /*aumenta la sombra efecto agrandamiento*/
 }
 
 /* Contenedor de la imagen */
 .imagen-zigzag {
-    flex: 1;
+    flex: 1; /*debe ocupar el espacio disponible o sea el 50% ta que el otro tiene 1 tambien el texto*/
     height: 380px;
     overflow: hidden; /* Mantiene la imagen dentro del marco al ampliar */
 }
 
 .imagen-zigzag img {
-    width: 100%;
+    width: 100%; /*ocupa el 100% del contenedor permitido del padre imagen.zigzag*/
     height: 100%;
-    object-fit: cover;
-    display: block;
+    object-fit: cover; /* hace que mantenga la calidad no se estire solo se amplie*/
+    display: block;/*Elimina un pequeño espacio en blanco (de 3 a 4 píxeles) que los navegadores agregan por defecto debajo de las imágenes en línea.*/
     transition: transform 0.5s ease; /* Transición suave de zoom */
 }
 
-/* Micro-zoom en la imagen al hacer hover sobre la tarjeta */
+/* Micro-zoom en la imagen al estar encima sobre la tarjeta */
 .tarjeta-zigzag:hover .imagen-zigzag img {
     transform: scale(1.06);
 }
@@ -417,7 +417,7 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
     color: white;
     padding: 14px 32px;
     border-radius: 8px;
-    text-decoration: none;
+    text-decoration: none; /*quita subrayado a la imagen*/
     font-weight: 600;
     letter-spacing: 0.5px;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -429,7 +429,7 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
     box-shadow: 0 6px 15px rgba(26, 58, 107, 0.3);
 }
 
-/* fin pagina de destinos historicos*/
+/* fin pagina de destinos historicos ------------------------------------------------------------------------------------------------------*/
 
 /* comienzo pagina de reglas*/
 

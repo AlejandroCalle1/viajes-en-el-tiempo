@@ -31,7 +31,7 @@
     </header>
 
     <main>
-        <section class="banner-pagina">
+        <section class="banner-pagina"> <!--en este caso no utilziamos hero si no secciones para estas -->
             <span class="subtitulo-badge">Chronos Travel</span>
             <h1>Destinos Históricos</h1>
             <div class="linea-decorativa"></div>
@@ -41,7 +41,7 @@
         <!-- Sección de destinos en formato zigzag -->
         <section class="contenedor-destinos-historicos">
 
-            <!-- Destino 1: Imagen Izquierda / Texto Derecho -->
+            <!-- Destino 1 Imagen Izquierda-->
             <article class="tarjeta-zigzag">
                 <div class="imagen-zigzag">
                     <img src="img/coliseo destino.jpg" alt="Coliseo Romano">
@@ -53,7 +53,7 @@
                 </div>
             </article>
 
-            <!-- Destino 2: Invertido (Texto Izquierdo / Imagen Derecha mediante CSS) -->
+            <!-- Destino 2 mismo pérp Invertido -->
             <article class="tarjeta-zigzag invertido">
                 <div class="imagen-zigzag">
                     <img src="img/piramide destino.jpg" alt="Pirámides de Guiza">
@@ -65,7 +65,7 @@
                 </div>
             </article>
 
-            <!-- Destino 3: Imagen Izquierda / Texto Derecho -->
+            <!-- Destino 3 Imagen Izquierda -->
             <article class="tarjeta-zigzag">
                 <div class="imagen-zigzag">
                     <img src="img/hotel medieval.jpg" alt="Castillo Medieval">
@@ -76,7 +76,7 @@
                     <a href="#" class="btn-reserva">Reservar viaje</a>
                 </div>
             </article>
-            <!-- Destino 7: Babilonia -->
+            <!-- Destino 7 Babilonia dereccha-->
             <article class="tarjeta-zigzag invertido">
                 <div class="imagen-zigzag">
                     <img src="img/babilonia.jpg" alt="Jardines Colgantes de Babilonia">
@@ -88,7 +88,7 @@
                 </div>
             </article>
 
-            <!-- Destino 8: Imperio Maya -->
+            <!-- Destino 8 Imperio Maya izquierda -->
             <article class="tarjeta-zigzag">
                 <div class="imagen-zigzag">
                     <img src="img/maya.jpg" alt="Pirámide de Chichén Itzá">
@@ -100,7 +100,7 @@
                 </div>
             </article>
 
-            <!-- Destino 9: Ruta de la Seda -->
+            <!-- Destino 9 Ruta de la Seda derecha -->
             <article class="tarjeta-zigzag invertido">
                 <div class="imagen-zigzag">
                     <img src="img/ruta_seda.jpg" alt="Caravana en la ciudad labrada de Petra">
@@ -119,19 +119,19 @@
         <p>&copy; 2026 Chronos Travel. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const tarjetas = document.querySelectorAll(".tarjeta-zigzag");
+    <script>  <!-- este es a animacion para el scrolling de los destinos -->
+        document.addEventListener("DOMContentLoaded", function() { <!--espera a que el documento este cargado para ejecutar el script -->
+            const tarjetas = document.querySelectorAll(".tarjeta-zigzag");<!-- selecciona todas las tarjetas zigzag y las guarda-->
 
-            const observador = new IntersectionObserver((entradas) => {
+            const observador = new IntersectionObserver((entradas) => { <!-- observador de intersección Su trabajo es vigilar constantemente la pantalla para saber si un elemento entra o sale de la vista del usuario-->
                 entradas.forEach((entrada) => {
-                    if (entrada.isIntersecting) {
+                    if (entrada.isIntersecting) { <!--Comprueba si la tarjeta que se está vigilando ingresó a la pantalla-->
                         entrada.target.classList.add("visible");
                     }
                 });
-            }, { threshold: 0.2 });
+            }, { threshold: 0.2 }); <!--significa 20%. Le dice al observador No reacciones apenas la tarjeta toque el borde de la pantalla; reacciona solo cuando el 20% de la tarjeta ya sea visible para el usuario-->
 
-            tarjetas.forEach((tarjeta) => observador.observe(tarjeta));
+            tarjetas.forEach((tarjeta) => observador.observe(tarjeta)); <!-- Observa cada tarjeta la lista le dice al observador que empiece a vigilar cada una de ellas individualmente. -->
         });
     </script>
 </body>
