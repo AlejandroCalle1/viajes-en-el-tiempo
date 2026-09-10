@@ -97,12 +97,11 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
 /* Body 2 seccion, cuadrícula de destinos ---------------------------------------------------------------------------------------------------------------------------------  */
 .destinos_turisticos {   /* contenedor de la cuadrícula de destinos */
     padding: 50px; /* espacio interno alrededor de la cuadrícula */
-    font-family: sans-serif;
     color: #333;
 }
 
 .grid-destinos {      /* contenedor de la cuadrícula de destinos */
-    display: grid; /* convierte el contenedor en una cuadrícula */
+    display: grid; /* convierte el contenedor en una cuadrícula,grid es mejor para columnas  */
     grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
     gap: 70px; /* espacio entre los elementos de la cuadrícula */
 }
@@ -201,7 +200,7 @@ nav ul li a:hover { /* estilos para los enlaces de navegación al pasar el mouse
 
 /*pagina hoteles y paquetes de viajes*/
 .formulario-reserva form {  /* contenedor del formulario de reserva */
-    display: flex;
+    display: flex;           /* convierte el formulario en un contenedor flexible */
     flex-direction: column;   /* apila los elementos verticalmente */
     max-width: 500px;         /* que no se estire a todo el ancho de la pantalla */
     margin: 30px auto;        /* centra el formulario horizontalmente */
