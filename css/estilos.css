@@ -17,6 +17,7 @@ header {
     
 }
 
+
 nav { /* Estilos para la barra de navegación */
     margin: 0 auto; /*centra el <nav> entre sus hermanos (h1 y button) dentro del header — esto es justo lo que buscabas para el efecto Aviatur.*/
     
