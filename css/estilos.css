@@ -215,6 +215,38 @@ nav ul li a:hover {
 }
 
 
+/*pagina hoteles y paquetes de viajes*/
+.formulario-reserva form {  /* contenedor del formulario de reserva */
+    display: flex;
+    flex-direction: column;   /* apila los elementos verticalmente */
+    max-width: 500px;         /* que no se estire a todo el ancho de la pantalla */
+    margin: 30px auto;        /* centra el formulario horizontalmente */
+    gap: 15px;                /* espacio entre cada label/input */
+}
+
+.formulario-reserva input,  /* estilos para los campos de entrada del formulario */
+.formulario-reserva select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.formulario-reserva button { /* estilos para el botón de envío del formulario */
+    padding: 14px;
+    background-color: #1a3a6b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.formulario-reserva button:hover {  /* efecto hover para el botón de envío del formulario */
+    background-color: #12294d;
+}
+
 /* pagina destinos historicos*/
 
 /* Banner principal con imagen de fondo y superposición (Overlay) */

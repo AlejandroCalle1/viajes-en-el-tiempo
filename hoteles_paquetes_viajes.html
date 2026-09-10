@@ -76,17 +76,28 @@
 
             <form> <!-- etiqueta que envuelve todos los campos del formulario -->
                 <label for ="nombre">Nombre completo:</label>  <!-- etiqueta para el campo de nombre, el atributo for se asocia con el id del input -->
-                <input type="text" id="nombre" name="nombre" required> </form> <!-- campo de texto para el nombre, el atributo required indica que es obligatorio -->
-                
+                <input type="text" id="nombre" name="nombre" required>  <!-- campo de texto para el nombre, el atributo required indica que es obligatorio -->
 
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino" required> <!-- lista desplegable para seleccionar el destino -->
+                    <option value="">Seleccione un destino</option>
+                    <option value="roma">Roma Antigua</option>
+                    <option value="egipto">Egipto Antiguo</option>
+                    <option value="futurista">Ciudad Futurista</option>
+                    <option value="medieval">Castillo Medieval</option>
+                    <option value="futurista_bajo_agua">Ciudad futurista bajo el agua</option>
+                    <option value="futurista_nave">Ciudad futurista en nave espacial</option>
+                </select>
+
+                <label for="fecha">Fecha de viaje:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            
+                <button type="submit">Reservar</button> <!-- botón para enviar el formulario -->
             </form>
-
-
-        
         </section>
-
-    
-    
     </main>
 
     
